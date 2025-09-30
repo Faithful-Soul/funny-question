@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Сосал?</title>
+    </head>
+    <body style="text-align: center; margin-top: 100px;">
+        <h2 style="color:red;">Сосал?</h2>
+        <botton id="yes" style="background: blue; color:white; padding:10px 20px; border:none; border-radius: 5px;">Да</botton>
+        <botton id="no" style="background: red; color:white; padding:10px 20px; border:none; border-radius: 5px; position: absolute;">Нет</botton>
+        <script>
+            const no = document.getElementById("no");
+            const yes = document.getElementById("yes");
+
+            no.onmouseover = () => {
+                no.style.left = Math.random() * (window.innerWidth - 100) + "px";
+                no.style.top = Math.random() * (window.innerHeight - 50) + "px";
+            };
+
+            yes.onclick = () => {
+                alert("Я так и знал)))))))");
+            };
+        </script>
+    </body>
+</html>
